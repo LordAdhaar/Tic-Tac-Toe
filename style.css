@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.top,.mid,.bottom{
+    display: flex;
+    font-size: 100px
+}
+
+.top,.mid{
+    border-bottom: 5px solid rgb(115, 255, 0);
+}
+
+.box {
+    box-sizing: border-box ;
+    padding: 20px;
+}
+
+#zero,#one,#three,#four,#six,#seven{
+    border-right: 5px solid rgb(115, 255, 0);
+}
+
