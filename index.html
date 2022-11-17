@@ -10,27 +10,37 @@
 </head>
 <body>
 
-    <div class="playerChoice">
-        <button class="X">X</button>
-        <button class="O">O</button>
+    <div class="header">
+        TIC-TAC-TOE
+    </div>
+
+    <div class="announcement">
+        <h3>PLAYER 1 TURN -</h3>
+        <div class="choice">
+            X
+        </div>
     </div>
 
     <div class="grid">
         <div class="top">
-            <div class="box" id="zero" onclick="playerTurn(event)"></div>
-            <div class="box" id="one" onclick="playerTurn(event)"></div>
-            <div class="box" id="two" onclick="playerTurn(event)"></div>
+            <div class="box zero" id="0" onclick="playerTurn(event)"></div>
+            <div class="box one" id="1" onclick="playerTurn(event)"></div>
+            <div class="box two" id="2" onclick="playerTurn(event)"></div>
         </div>
         <div class="mid">
-            <div class="box" id="three" onclick="playerTurn(event)"></div>
-            <div class="box" id="four" onclick="playerTurn(event)"></div>
-            <div class="box" id="five" onclick="playerTurn(event)"></div>
+            <div class="box three" id="3" onclick="playerTurn(event)"></div>
+            <div class="box four" id="4" onclick="playerTurn(event)"></div>
+            <div class="box five" id="5" onclick="playerTurn(event)"></div>
         </div>
         <div class="bottom">
-            <div class="box" id="six" onclick="playerTurn(event)"></div>
-            <div class="box" id="seven" onclick="playerTurn(event)"></div>
-            <div class="box" id="eight" onclick="playerTurn(event)"></div>
+            <div class="box six" id="6" onclick="playerTurn(event)"></div>
+            <div class="box seven" id="7" onclick="playerTurn(event)"></div>
+            <div class="box eight" id="8" onclick="playerTurn(event)"></div>
         </div>
+    </div>
+
+    <div class="reset">
+        <button>RESET</button>
     </div>
 
 </body>

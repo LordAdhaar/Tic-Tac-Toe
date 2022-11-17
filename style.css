@@ -1,31 +1,77 @@
 body{
     margin: 0px;
     min-height: 100vh;
+    min-width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
+
+.header{
+    font-size: 6rem;
+    text-align: center;
+
+    font-weight: bolder;
+}
+
+.announcement{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.announcement h3{
+    margin: 0px;
+    font-size: 2rem;
+}
+
+.choice{
+    font-size: 2.5rem;
+    padding-top: 5px;
+    font-weight: bolder;
+}
+
 .container {
     border: 1px solid;
     display: flex;
     flex-direction: column;
 }
 
+
 .top,.mid,.bottom{
-    display: flex;
-    font-size: 100px
+    font-size: 100px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .top,.mid{
     border-bottom: 5px solid rgb(115, 255, 0);
 }
 
-.box {
+.box {  
     box-sizing: border-box ;
     padding: 20px;
+    width: 140px;
+    height: 140px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#zero,#one,#three,#four,#six,#seven{
+.zero,.one,.three,.four,.six,.seven{
     border-right: 5px solid rgb(115, 255, 0);
+}
+
+.reset{
+    padding-top: 25px;
+
+}
+.reset button{
+    font-size: 1.5rem;
 }
 
