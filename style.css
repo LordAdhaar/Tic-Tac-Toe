@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    padding: 0px;
     min-height: 100vh;
     min-width: 100vw;
     display: flex;
@@ -7,7 +8,6 @@ body{
     justify-content: flex-start;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: antiquewhite;
 
 }
 
@@ -15,16 +15,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 10px solid;
-    border-bottom: 0px;
     margin: auto;
+    gap: 10px;
 }
 
 .header{
     font-size: 6rem;
     text-align: center;
     font-weight: bolder;
-    background-color: white;
+    border-bottom: 10px solid;
 }
 
 .announcement{
@@ -33,9 +32,9 @@ body{
     gap: 7px;
     width: -webkit-fill-available;
     justify-content: center;
-    background: black;
-    color: #ffffff;
     padding: 10px;
+    background-color: black;
+    color: white;
 }
 
 .announcement h3{
@@ -56,7 +55,6 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: white;
-    border: 10px solid cyan;
 }
 
 .top,.mid,.bottom{
@@ -67,7 +65,7 @@ body{
 }
 
 .top,.mid{
-    border-bottom: 10px solid rgb(0 71 255);
+    border-bottom: 10px solid ;
 }
 
 .box {  
@@ -82,7 +80,7 @@ body{
 }
 
 .zero,.one,.three,.four,.six,.seven{
-    border-right: 10px solid rgb(0 71 255);
+    border-right: 10px solid;
 }
 
 .reset{
@@ -91,12 +89,10 @@ body{
     width: -webkit-fill-available;
     display: flex;
     justify-content: center ;
-    background-color: black;
 }
 .reset button{
-    background-color: black;
-    color: white;
     font-size: 1.5rem;
-    border: 2px solid;
+    background-color: whtie;
+    border: 5px solid;
     font-weight: bolder;
 }
