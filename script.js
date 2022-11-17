@@ -204,7 +204,7 @@ function resetBoard(){
     let choice = document.querySelector(".choice");
 
     player.choice = "X";
-    announcement.innerHTML = "PLAYER 1 TURN :"
+    announcement.innerHTML = "PLAYER 1 TURN -"
     choice.innerHTML = player.choice
 
 
