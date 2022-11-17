@@ -7,20 +7,35 @@ body{
     justify-content: flex-start;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid;
+    border-bottom: 0px;
+    margin: auto;
 }
 
 .header{
     font-size: 6rem;
     text-align: center;
-
     font-weight: bolder;
+    background-color: white;
 }
 
 .announcement{
     display: flex;
     align-items: center;
     gap: 7px;
+    width: -webkit-fill-available;
+    justify-content: center;
+    background: black;
+    color: #ffffff;
+    padding: 10px;
 }
 
 .announcement h3{
@@ -34,12 +49,15 @@ body{
     font-weight: bolder;
 }
 
-.container {
-    border: 1px solid;
+.grid{
+    padding: 20px;
+    width: -webkit-fill-available;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 10px solid cyan;
 }
-
 
 .top,.mid,.bottom{
     font-size: 100px;
@@ -49,7 +67,7 @@ body{
 }
 
 .top,.mid{
-    border-bottom: 5px solid rgb(115, 255, 0);
+    border-bottom: 10px solid rgb(0 71 255);
 }
 
 .box {  
@@ -64,14 +82,22 @@ body{
 }
 
 .zero,.one,.three,.four,.six,.seven{
-    border-right: 5px solid rgb(115, 255, 0);
+    border-right: 10px solid rgb(0 71 255);
 }
 
 .reset{
-    padding-top: 25px;
-
+    font-size: 1.5rem;
+    padding: 5px;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center ;
+    background-color: black;
 }
 .reset button{
+    background-color: black;
+    color: white;
     font-size: 1.5rem;
+    border: 2px solid;
+    font-weight: bolder;
 }
 
