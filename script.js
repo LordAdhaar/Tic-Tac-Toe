@@ -46,6 +46,10 @@ function playerTurn(event){
 
     let choice = document.querySelector(".choice");
     let announcement = document.querySelector(".announcement h3");
+    const bgO = document.querySelector(".bgO");
+    const bgX = document.querySelector(".bgX")
+    const draw = document.querySelector(".draw");
+
 
     if(event.path[0].innerHTML != "" || winnerO === true || winnerX === true){
         return;
@@ -71,11 +75,15 @@ function playerTurn(event){
     if(winnerX===true){
         announcement.innerHTML = "PLAYER 1 HAS WON";
         choice.innerHTML="";
+        console.log(bgX);
+        bgX.style.display="block";
+
         return;
     }
     else if (winnerO===true){
         announcement.innerHTML = "PLAYER 2 HAS WON";
         choice.innerHTML = "";
+        bgO.style.display="block";
         return;
     }
     
@@ -83,6 +91,7 @@ function playerTurn(event){
         console.log(count)
         announcement.innerHTML = "IT'S A DRAW";
         choice.innerHTML="";
+        draw.style.display = "block";
         return;
     }
 
@@ -201,12 +210,17 @@ function resetBoard(){
 
     //RESET ANNOUNCEMENT
     let announcement = document.querySelector(".announcement h3");
-    let choice = document.querySelector(".choice");
+    let choice = document.querySelector(".choice");    
+    const bgO = document.querySelector(".bgO");
+    const bgX = document.querySelector(".bgX")
+    const draw = document.querySelector(".draw");
+
 
     player.choice = "X";
     announcement.innerHTML = "PLAYER 1 TURN -"
     choice.innerHTML = player.choice
 
-
-
+    bgO.style.display = "none";
+    bgX.style.display = "none";
+    draw.style.display = "none";
 }
