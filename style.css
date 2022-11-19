@@ -12,41 +12,6 @@ body{
 
 }
 
-.bgO, .bgX, .draw{
-    position: absolute;
-    font-size: 4rem;
-    width: -webkit-fill-available;
-    display:none;
-}
-
-.bgO h1,.bgX h1, .draw h1{
-    margin: 0px;
-    display: inline-block;
-    animation: marquee 3s ease-in-out infinite;
-    text-shadow: 0px 0px 0px black;
-    font-size:6.8rem;
-}
-
-.bgO h1{
-    color: #00ff92ab;
-}
-
-.bgX h1{
-    color: #ff0000ab ;
-}
-
-.draw{
-    color: #002cffab;
-}
-
-@keyframes marquee {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-}
-
-
-
-
 .container {
     display: flex;
     flex-direction: column;
